@@ -1,0 +1,134 @@
+.text_line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.text_line h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.text_line h2 span{
+    color: rgb(233, 12, 23);
+    font-weight: 700;
+}
+
+.text_line p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.menu_content{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+}
+
+.menu_content .card{
+    width: 300px;
+    margin: 40px;
+    border: 15px solid white;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    cursor: pointer;
+}
+
+.menu_content .card .m_img{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    transition: 0.7s;
+}
+
+.menu_content .card:hover{
+    transform: scale(1.08);
+}
+
+.menu_content .card .m_img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.menu_content .card .description h3{
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 0 5px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 440px){
+    section.menu_1 {
+        padding: 73px 15px;
+    }
+
+    .menu_1 .text_line{
+        padding: 6px 15px;
+        text-align: center;
+    }
+
+    .menu_1 .text_line h2{
+        margin-bottom: 20px;
+    }
+
+    .menu_1 .text_line p{
+        font-size: 0.9rem;
+    }
+
+    .menu_content .card{
+        margin: 18px 2px;
+        border: 13px solid white;
+    }
+
+    .menu_content .btn {
+        padding: 12px 2px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 440px) and (max-width: 980px){
+    section.menu_1 {
+        padding: 73px 15px;
+    }
+
+    .menu_1 .text_line{
+        padding: 6px 15px;
+        text-align: center;
+    }
+
+    .menu_1 .text_line h2{
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+    }
+
+    .menu_1 .text_line p{
+        font-size: 1rem;
+    }
+
+    .menu_content .card{
+        margin: 10px 3px;
+        border: 13px solid white;
+    }
+
+    .menu_content .card {
+        width: 273px;
+    }
+
+    .menu_content .btn {
+        padding: 12px 2px;
+        font-size: 1rem;
+        margin: 6rem;
+    }
+}

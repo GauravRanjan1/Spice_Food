@@ -1,0 +1,63 @@
+.cont_us{
+    background: url('../assests/bg3.jpg') no-repeat;
+    background-size: cover;
+}
+
+.form_in{
+    max-width: 400px;
+    margin-top: 45px;
+    padding: 50px 50px;
+    background-color: white;
+    box-shadow: 0 15px 60px rgba(0,0,0,0.1);
+}
+
+.form_in h3{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.input_bx{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input_bx input, 
+.input_bx textarea{
+    border: none;
+    width: 100%;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    resize: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.change_btn{
+    border: none;
+    margin: 0;
+    padding: 8px 10px;
+}
+
+@media (max-width: 440px){
+    section.cont_us{
+        padding: 80px 10px;
+    }
+
+    .cont_us .text_line{
+        text-align: center;
+    }
+
+    .cont_us .text_line h2{
+        margin-bottom: 20px;
+    }
+
+    .cont_us .text_line p{
+        font-size: 0.9rem;
+    }
+
+    .change_btn {
+        padding: 10px 20px;
+    }
+}

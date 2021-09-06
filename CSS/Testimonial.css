@@ -1,0 +1,141 @@
+.test{
+    background: url('../assests/bg2.jpg') no-repeat;
+    background-size: 100%;
+}
+
+.test .text_line h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.test .text_line p{
+    color: white;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.test_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.test_content .card{
+    width: 340px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.test_content .card .img_box{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.test_content .card .img_box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.test_content .card .description{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.test_content .card .description h3{
+    color: rgb(233, 12, 23);
+}
+
+.test_content .card .description p{
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 848px){
+    .test{
+        background: none;
+    }
+
+    section.test {
+        padding: 15px 5px;
+    }
+
+    .test .text_line{
+        text-align: center;
+    }
+
+    .test .text_line h2{
+        font-size: 2rem;
+        color: black;
+    }
+
+    .test .text_line p{
+        font-size: 0.9rem;
+        color: black;
+    }
+
+    .test_content{
+        /* overflow-y: hidden;
+        overflow-x: scroll; */
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .test_content .card{
+        margin: 51px 4px;
+        padding: 5px;
+    }
+
+    .test_content .btn{
+        padding: 5px 6px;
+        font-size: 0.9rem;
+    }
+}
+
+
+@media (min-width: 849px) and (max-width: 1050px){
+    section.test {
+        padding: 5px 5px;
+    }
+
+    .test .text_line{
+        text-align: center;
+    }
+
+    .test .text_line h2{
+        font-size: 2.2rem;
+    }
+
+    .test .text_line p{
+        font-size: 1rem;
+    }
+
+    .test_content .card {
+        width: 224px;
+    }
+
+    .test_content .card{
+        margin: 53px 4px;
+        padding: 5px;
+    }
+
+    .test_content .btn{
+        padding: 5px 6px;
+        font-size: 0.9rem;
+    }
+}
